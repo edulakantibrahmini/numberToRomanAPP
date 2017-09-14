@@ -16,9 +16,8 @@ angular.module('myApp.view1', ['ngRoute'])
             var numeralCodes = [["","I","II","III","IV","V","VI","VII","VIII","IX"],         // Ones
                 ["","X","XX","XXX", "XL", "L", "LX", "LXX", "LXXX", "XC"],   // Tens
                 ["","C","CC","CCC","CD","D","DC","DCC","DCCC","CM"],        // Hundreds
-                ["","M","MM","MMM","IV","V","VM", "VMM", "VMMM","IX","X"],   // Thousands
-                ["","X","XX","XXX","XL","X","LX", "LXX", "LXXX","XC","C"]]; // For above 5000 bar above V should come.
-
+				["","M","MM","MMM"]];  										// Upto 3999
+                
             var numeral = "";
             var digits = input.toString().split('').reverse();
             for (var i=0; i < digits.length; i++){
