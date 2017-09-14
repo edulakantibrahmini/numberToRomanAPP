@@ -1,0 +1,21 @@
+<div ng-controler="View1Ctrl" >
+
+    <div class="row" style="margin-left: 50px;">
+        <p class="col-xs-12">Please enter the input value for converting into a proper roman number</p>
+    </div>
+    <div class="row" style="margin-left: 50px;">
+        <div class="col-xs-4">
+            <p>Input</p>
+        </div>
+        <div class="col-xs-4" style="margin-left: 20px;">
+            <input type="text" name="Sample Number" ng-model="inputNumber">
+        </div>
+        <div class="col-xs-4" style="margin-left: 20px;">
+            <input type="submit" value="Submit" ng-click="convertToRoman(inputNumber);">
+
+        </div>
+    </div>
+    <div class="row" style="margin-left: 50px;">
+        Result &nbsp <p class="col-xs-12" ng-bind="outputNumber"></p>
+    </div>
+</div>
