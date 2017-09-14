@@ -12,6 +12,11 @@ angular.module('myApp.view1', ['ngRoute'])
 
     .controller('View1Ctrl', ['$scope',function($scope) {
         $scope.convertToRoman = function(input){
+			
+			 if(input > 3999){
+                $scope.outputNumber = "Please enter a valid number between 0 and 3999"
+                return outputNumber;
+            }
 
             var numeralCodes = [["","I","II","III","IV","V","VI","VII","VIII","IX"],         // Ones
                 ["","X","XX","XXX", "XL", "L", "LX", "LXX", "LXXX", "XC"],   // Tens
